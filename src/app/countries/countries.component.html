@@ -1,0 +1,35 @@
+<div>
+  <h2>{{title}}</h2>
+  <div>
+    <label for="name">Country Name: </label>
+    <input id="name" [(ngModel)]="countries.name" placeholder="name">
+  </div>
+<!--  <ul class="countries">-->
+<!--    <li *ngFor="let country of countries">-->
+<!--      <button [class.selected]="country === selectedCountry" type="button" (click)="onSelect(country)">-->
+<!--        <span class="id">{{country.id}}</span>-->
+<!--        <span class="name">{{country.name}}</span>-->
+<!--      </button>-->
+<!--    </li>-->
+<!--  </ul>-->
+
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Area</th>
+      <th>National Day</th>
+      <th>Country Code 2</th>
+      <th>Country Code 3</th>
+    </tr>
+    <tr>
+      <td>{{countries.id}}</td>
+      <td>{{countries.name}}</td>
+      <td>{{countries.area}}</td>
+      <td>{{countries.nationalDay}}</td>
+      <td>{{countries.countryCode2}}</td>
+      <td>{{countries.countryCode3}}</td>
+    </tr>
+  </table>
+</div>
+
